@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "devDependencies": {
+    "extra-bigint": "^1.1.17",
+    "prettier": "^3.2.1",
+    "ts-arithmetic": "^0.1.1"
+  }
+}

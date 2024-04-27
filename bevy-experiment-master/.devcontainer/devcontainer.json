@@ -1,0 +1,25 @@
+{
+	"name": "Rust",
+	"dockerFile": "dockerfile",
+	"mounts": [
+		{
+			"source": "devcontainer-cargo-cache-${devcontainerId}",
+			"target": "/usr/local/cargo",
+			"type": "volume"
+		}
+	],
+	"containerEnv": {
+		"HOST_USER": "${localEnv:USER}",
+		"HOST_WORKSPACE": "${localWorkspaceFolder}",
+		"HOST_DISPLAY": "${localEnv:DISPLAY}",
+		"HOST_XAUTHORITY": "${localEnv:XAUTHORITY}"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"PolyMeilex.wgsl"
+			]
+		}
+	}
+}
